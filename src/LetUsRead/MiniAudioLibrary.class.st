@@ -34,8 +34,8 @@ MiniAudioLibrary class >> reset [
 ]
 
 { #category : #accessing }
-MiniAudioLibrary >> encoderConfigInitForEncoderFormat: anMAEncoderFormat format: anMAFormat channels: channelsInteger sampleRate: sampleRateInteger [
-	^self ffiCall: #( ma_encoder_config* ma_encoder_config_init(ma_encoder_format anMAEncoderFormat, ma_format anMAFormat, ma_unit32 channelsInteger, ma_unit32 sampleRateInteger) )
+MiniAudioLibrary >> encoderConfigInitForEncodingFormat: anMAEncodingFormat format: anMAFormat channels: channelsInteger sampleRate: sampleRateInteger [
+	^self ffiCall: #( ma_encoder_config* ma_encoder_config_init(ma_encoder_format anMAEncodingFormat, ma_format anMAFormat, ma_unit32 channelsInteger, ma_unit32 sampleRateInteger) )
 
 ]
 
