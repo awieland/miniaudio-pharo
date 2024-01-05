@@ -22,7 +22,7 @@ MiniAudioLibrary class >> initialize [
 MiniAudioLibrary class >> initializeTypeMap [
 	TypeMap := Dictionary newFromPairs: #(
 		ma_encoder_config #FFIOpaqueObject
-		ma_encoder_format #MAEncodingFormat
+		ma_encoding_format #MAEncodingFormat
 		ma_format #MAFormat
 		ma_unit32 #uint32
 	)
@@ -35,13 +35,8 @@ MiniAudioLibrary class >> reset [
 
 { #category : #accessing }
 MiniAudioLibrary >> encoderConfigInitForEncodingFormat: anMAEncodingFormat format: anMAFormat channels: channelsInteger sampleRate: sampleRateInteger [
-	^self ffiCall: #( ma_encoder_config* ma_encoder_config_init(ma_encoder_format anMAEncodingFormat, ma_format anMAFormat, ma_unit32 channelsInteger, ma_unit32 sampleRateInteger) )
+	^ self ffiCall: #( ma_encoder_config* ma_ext_encoder_config_init(ma_encoding_format anMAEncodingFormat, ma_format anMAFormat, ma_unit32 channelsInteger, ma_unit32 sampleRateInteger) )
 
-]
-
-{ #category : #accessing }
-MiniAudioLibrary >> ffiCallingConvention [
-	^ #cdecl
 ]
 
 { #category : #accessing }
