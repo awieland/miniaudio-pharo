@@ -591,3 +591,8 @@ MAResult class >> enumDecl [
     MA_FAILED_TO_STOP_BACKEND_DEVICE  -403
 	)
 ]
+
+{ #category : #initalization }
+MAResult class >> initialize [
+	super initialize
+]

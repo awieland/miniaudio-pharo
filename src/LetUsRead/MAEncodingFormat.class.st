@@ -26,6 +26,11 @@ MAEncodingFormat class >> enumDecl [
 	)
 ]
 
+{ #category : #initialization }
+MAEncodingFormat class >> initialize [
+	super initialize
+]
+
 { #category : #'accessing enum' }
 MAEncodingFormat class >> ma_encoding_format_flac [
 	"This method was automatically generated"

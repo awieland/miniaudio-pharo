@@ -28,6 +28,11 @@ MAFormat class >> enumDecl [
 	)
 ]
 
+{ #category : #initalization }
+MAFormat class >> initialize [
+	super initialize
+]
+
 { #category : #'accessing enum' }
 MAFormat class >> ma_format_f32 [
 	"This method was automatically generated"
