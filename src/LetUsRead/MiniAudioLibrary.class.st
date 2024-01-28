@@ -95,5 +95,7 @@ MiniAudioLibrary >> versionString [
 
 { #category : #'accessing - platform' }
 MiniAudioLibrary >> win32LibraryName [
-	^ 'miniaudio-lib.dll'
+	| repo |
+	repo := IceRepository registeredRepositoryIncludingPackage: self class package.
+	^ (repo location / 'bin' / 'miniaudio-lib.dll') fullName
 ]
