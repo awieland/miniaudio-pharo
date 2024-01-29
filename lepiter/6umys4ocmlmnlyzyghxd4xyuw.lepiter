@@ -5,6 +5,43 @@
 		"__type" : "snippets",
 		"items" : [
 			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-29T08:34:57.885-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-29T08:35:09.981-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SOPicnfMDQCU1Jz9BaVKDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Low-level API"
+			},
+			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -29,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-13T02:47:06.986-05:00"
+						"dateAndTimeString" : "2024-01-29T03:01:56.959-05:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "uFZEqynKDQCxTBHCCPi4cw=="
 				},
-				"code" : "lib := MiniAudioLibrary uniqueInstance.\rencoderConfig := lib encoderConfigInitForEncodingFormat: MAEncodingFormat ma_encoding_format_wav format: MAFormat ma_format_s16 channels: 2 sampleRate: 44100.\rencoder := lib allocateEncoder.\rresult := lib encoderInitFileWithPath: 'recording.wav' config: encoderConfig encoder: encoder.\rdeviceConfig := lib deviceConfigInitForCaptureWith: encoder.\rdevice := lib allocateDevice.\rresult := lib deviceInitForConfig: deviceConfig device: device.\rresult := lib deviceStart: device."
+				"code" : "lib := MiniAudioLibrary uniqueInstance.\rencoderConfig := lib\r\t\tencoderConfigInitForEncodingFormat: MAEncodingFormat ma_encoding_format_wav\r\t\tformat: MAFormat ma_format_s16\r\t\tchannels: 2\r\t\tsampleRate: 44100.\rencoder := lib allocateEncoder.\rresult := lib\r\t\tencoderInitFileWithPath: 'recording.wav'\r\t\tconfig: encoderConfig\r\t\tencoder: encoder.\rdeviceConfig := lib deviceConfigInitForCaptureWith: encoder.\rdevice := lib allocateDevice.\rresult := lib deviceInitForConfig: deviceConfig device: device.\rresult := lib deviceStart: device"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -107,6 +144,43 @@
 				"code" : "MiniAudioLibrary initialize."
 			},
 			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-29T08:36:31.719-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-29T08:36:36.045-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "cKp6eHfMDQCVPf2sBaVKDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "High-level API"
+			},
+			{
 				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
@@ -131,14 +205,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-29T02:38:33.152-05:00"
+						"dateAndTimeString" : "2024-01-29T03:01:33.59-05:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "IKUEGUrKDQCYZiRIDJIKuA=="
 				},
-				"code" : "encoding := MiniAudioEncoding withEncodingFormat: MAEncodingFormat ma_encoding_format_wav sampleFormat: MAFormat ma_format_s16 channels: 2 sampleRate: 44100.\rtargetFile := 'recording.wav' asFileReference.\rrecorder := MiniAudioRecorder withEncoding: encoding targetFile: targetFile."
+				"code" : "encoding := MiniAudioEncoding\r\t\twithEncodingFormat: MAEncodingFormat ma_encoding_format_wav\r\t\tsampleFormat: MAFormat ma_format_s16\r\t\tchannels: 2\r\t\tsampleRate: 44100.\rtargetFile := 'recording.wav' asFileReference.\rrecorder := MiniAudioRecorder withEncoding: encoding targetFile: targetFile"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -252,7 +326,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-12-31T00:56:53.091-05:00"
+			"dateAndTimeString" : "2024-01-29T08:34:42.575-05:00"
 		}
 	},
 	"editEmail" : {
@@ -263,12 +337,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-12-31T00:56:53.091-05:00"
+			"dateAndTimeString" : "2024-01-29T08:34:42.575-05:00"
 		}
 	},
 	"pageType" : {
-		"__type" : "unnamedPage",
-		"defaultTitle" : "Playground"
+		"__type" : "namedPage",
+		"title" : "Audio API"
 	},
 	"uid" : {
 		"__type" : "uuid",
