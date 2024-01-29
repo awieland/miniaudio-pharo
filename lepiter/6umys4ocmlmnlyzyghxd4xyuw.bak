@@ -131,14 +131,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-29T02:38:33.152-05:00"
+						"dateAndTimeString" : "2024-01-29T02:36:25.288-05:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "IKUEGUrKDQCYZiRIDJIKuA=="
 				},
-				"code" : "encoding := MiniAudioEncoding withEncodingFormat: MAEncodingFormat ma_encoding_format_wav sampleFormat: MAFormat ma_format_s16 channels: 2 sampleRate: 44100.\rtargetFile := 'recording.wav' asFileReference.\rrecorder := MiniAudioRecorder withEncoding: encoding targetFile: targetFile."
+				"code" : "encoding := MiniAudioEncoding withEncodingFormat: MAEncodingFormat ma_encoding_format_wav sampleFormat: MAFormat ma_format_s16 channels: 2 sampleRate: 44100.\rtargetFile := 'recording.wav' asFileReference.\rrecorder := MiniAudioRecorder withEncoding: encoding targetFile: targetFile.\r'recording.wav' asPath"
 			},
 			{
 				"__type" : "pharoSnippet",

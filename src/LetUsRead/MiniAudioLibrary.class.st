@@ -63,6 +63,11 @@ MiniAudioLibrary >> deviceStart: device [
 ]
 
 { #category : #api }
+MiniAudioLibrary >> deviceStop: device [
+	^ self ffiCall: #( ma_result ma_device_stop(ma_device* device) )
+]
+
+{ #category : #api }
 MiniAudioLibrary >> deviceUninit: device [
 	^ self ffiCall: #( void ma_device_uninit(ma_device* device) )
 ]
