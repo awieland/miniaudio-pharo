@@ -20,7 +20,7 @@ MiniAudioRecorder class >> withEncoding: aMiniAudioEncoding targetFile: aFileRef
 { #category : #private }
 MiniAudioRecorder >> checkResult: anMAResult [
 	anMAResult = MAResult MA_SUCCESS
-		ifFalse: [ self error: 'Invalid ma_result: ' , anMAResult ]
+		ifFalse: [ self error: 'Invalid ma_result: ' , anMAResult printString ]
 ]
 
 { #category : #finalization }
