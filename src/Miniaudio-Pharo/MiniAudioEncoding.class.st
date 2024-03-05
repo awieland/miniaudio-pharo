@@ -7,7 +7,7 @@ Class {
 		'channels',
 		'sampleRate'
 	],
-	#category : #LetUsRead
+	#category : #'Miniaudio-Pharo'
 }
 
 { #category : #'instance creation' }

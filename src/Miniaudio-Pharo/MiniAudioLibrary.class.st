@@ -4,7 +4,7 @@ Class {
 	#classVars : [
 		'TypeMap'
 	],
-	#category : #LetUsRead
+	#category : #'Miniaudio-Pharo'
 }
 
 { #category : #accessing }

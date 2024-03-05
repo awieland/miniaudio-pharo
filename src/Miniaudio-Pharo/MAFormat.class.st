@@ -9,7 +9,7 @@ Class {
 		'ma_format_u8',
 		'ma_format_unknown'
 	],
-	#category : #LetUsRead
+	#category : #'Miniaudio-Pharo'
 }
 
 { #category : #'enum declaration' }

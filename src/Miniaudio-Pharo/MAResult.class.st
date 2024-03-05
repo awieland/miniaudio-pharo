@@ -74,7 +74,7 @@ Class {
 		'MA_TOO_MANY_OPEN_FILES',
 		'MA_UNAVAILABLE'
 	],
-	#category : #LetUsRead
+	#category : #'Miniaudio-Pharo'
 }
 
 { #category : #'accessing enum' }

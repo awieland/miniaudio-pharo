@@ -8,7 +8,7 @@ Class {
 		'ma_encoding_format_vorbis',
 		'ma_encoding_format_wav'
 	],
-	#category : #LetUsRead
+	#category : #'Miniaudio-Pharo'
 }
 
 { #category : #'enum declaration' }

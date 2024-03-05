@@ -1,14 +1,14 @@
 Class {
-	#name : #BaselineOfLetUsRead,
+	#name : #BaselineOfMiniaudioPharo,
 	#superclass : #BaselineOf,
-	#category : #BaselineOfLetUsRead
+	#category : #BaselineOfMiniaudioPharo
 }
 
 { #category : #loading }
-BaselineOfLetUsRead class >> loadLepiter [
+BaselineOfMiniaudioPharo class >> loadLepiter [
 	IceRepository registry  
 		detect: [ :aRepository |
-			aRepository name = 'let-us-read' ]
+			aRepository name = 'miniaudio-pharo' ]
 		ifFound: [ :aRepository | 
 			| defaultDatabase currentProperties |
 			defaultDatabase := LeDatabasesRegistry defaultLogicalDatabase.
@@ -20,9 +20,9 @@ BaselineOfLetUsRead class >> loadLepiter [
 ]
 
 { #category : #baseline }
-BaselineOfLetUsRead >> baseline: spec [
+BaselineOfMiniaudioPharo >> baseline: spec [
 	<baseline>
 		^ spec for: #common do: [
-			spec package: 'LetUsRead'
+			spec package: 'Miniaudio-Pharo'
 		]
 ]

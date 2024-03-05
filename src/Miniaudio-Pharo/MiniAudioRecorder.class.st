@@ -7,7 +7,7 @@ Class {
 		'deviceConfig',
 		'device'
 	],
-	#category : #LetUsRead
+	#category : #'Miniaudio-Pharo'
 }
 
 { #category : #'instance creation' }
